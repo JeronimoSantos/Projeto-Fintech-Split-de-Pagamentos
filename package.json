@@ -1,0 +1,16 @@
+{
+  "name": "code-lab-projeto-api-rest",
+  "version": "1.0.0",
+  "description": "projeto-api-rest",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jeronimosantos",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
