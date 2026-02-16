@@ -47,7 +47,12 @@ git clone https://github.com/JeronimoSantos/Projeto-Fintech-Split-de-Pagamentos.
 cd projeto-fintech-split-de-pagamentos
 ```
 
-3. To ensure that the financial rules are correct, run the native test suite:
+3. Install project dependencies:
+```
+npm install
+```
+
+4. To ensure that the financial rules are correct, run the native test suite:
 ```
 node --test src/test/test.js
 ```
