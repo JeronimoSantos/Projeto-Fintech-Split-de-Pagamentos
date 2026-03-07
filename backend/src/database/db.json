@@ -1,0 +1,11 @@
+{
+    "vendedores": [
+        {
+            "id": 1,
+            "nome": "Loja do Pedro",
+            "saldo": 0,
+            "comissao_percentual": 10
+        }
+    ],
+    "transacoes": []
+}
