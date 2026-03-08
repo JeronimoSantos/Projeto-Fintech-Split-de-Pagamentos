@@ -1,11 +1,44 @@
 {
-    "vendedores": [
-        {
-            "id": 1,
-            "nome": "Loja do Pedro",
-            "saldo": 0,
-            "comissao_percentual": 10
-        }
-    ],
-    "transacoes": []
+  "vendedores": [
+    {
+      "id": 1,
+      "nome": "larangeiras",
+      "saldo": 480,
+      "comissao_percentual": 20,
+      "longitude": "2.1",
+      "latitude": "2.4"
+    }
+  ],
+  "transacoes": [
+    {
+      "id": 1773005550820,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 40,
+        "vendedor": 160
+      },
+      "data": "2026-03-08T21:32:30.820Z"
+    },
+    {
+      "id": 1773005583859,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 40,
+        "vendedor": 160
+      },
+      "data": "2026-03-08T21:33:03.859Z"
+    },
+    {
+      "id": 1773006155299,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 40,
+        "vendedor": 160
+      },
+      "data": "2026-03-08T21:42:35.299Z"
+    }
+  ]
 }
