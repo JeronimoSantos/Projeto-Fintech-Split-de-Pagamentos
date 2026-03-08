@@ -53,4 +53,19 @@ export default class VendedorModel {
     }
     return false;
   }
+
+  static atualizarSaldoESalvarTransacao(vendedorId, novoSaldo, transacao) {
+    const db = this._readDB();
+    
+    // 1. Atualiza o saldo do vendedor específico
+    const vIndex = db.vendedores.findIndex(v => v.id === Number(vendedorId));
+    if (vIndex !== -1) {
+        db.vendedores[vIndex].saldo = novoSaldo;
+    }
+
+    // 2. Registra a transação no histórico global
+    db.transacoes.push(transacao);
+    
+    this._writeDB(db);
+  }
 }

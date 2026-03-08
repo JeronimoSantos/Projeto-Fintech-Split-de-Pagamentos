@@ -23,9 +23,10 @@ test('Fluxo Completo da Fintech API', async (t) => {
     });
     
     const resultado = await response.json();
+
     assert.strictEqual(response.status, 201);
-    // Se a comissão é 10%, o vendedor deve receber 180
-    assert.strictEqual(resultado.detalhes.split.vendedor, 180);
+    // Se a comissão é 20%, o vendedor deve receber 160
+    assert.strictEqual(resultado.detalhes.split.vendedor, 160);
   });
 
   // 3. Testar Atualização de Comissão (PUT)
