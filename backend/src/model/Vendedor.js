@@ -41,6 +41,25 @@ export default class VendedorModel {
     return null;
   }
 
+  // POST - Adicionar vendedor
+  static criar(dados) {
+    const db = this._readDB();
+    
+    const novoVendedor = {
+        id: Date.now(), // Gera um ID único baseado no timestamp
+        nome: dados.nome,
+        saldo: 0, // Todo vendedor novo começa com saldo zerado
+        comissao_percentual: dados.comissao_percentual || 10, // Default de 10%
+        longitude: dados.longitude || "0",
+        latitude: dados.latitude || "0"
+    };
+
+    db.vendedores.push(novoVendedor);
+    this._writeDB(db);
+    
+    return novoVendedor;
+}
+
   // DELETE - Remover vendedor
   static deletar(id) {
     const db = this._readDB();

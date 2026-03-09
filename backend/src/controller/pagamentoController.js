@@ -12,6 +12,20 @@ export const buscarVendedor = (req, res) => {
     vendedor ? res.json(vendedor) : res.status(404).json({ erro: "Não encontrado" });
 };
 
+// POST - Criar vendedor
+export const createVendedor = (req, res) => {
+    const { nome, comissao_percentual } = req.body;
+
+    // Validação simples
+    if (!nome) {
+        return res.status(400).json({ erro: "O nome do vendedor é obrigatório." });
+    }
+
+    const novoVendedor = Vendedor.criar(req.body);
+    
+    res.status(201).json(novoVendedor);
+};
+
 // PUT - Atualizar (ex: mudar % de comissão)
 export const atualizarVendedor = (req, res) => {
     const atualizado = Vendedor.atualizar(req.params.id, req.body);
