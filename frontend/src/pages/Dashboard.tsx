@@ -8,7 +8,7 @@ export const Dashboard = () => {
 
   return (
     <div className="flex flex-col min-h-screen p-5">
-      <h1>💰 Painel de Vendedores</h1>
+      <h1 className="text-amber-300">💰 Painel de Vendedores</h1>
       <div className="grid">
         {vendedores.map(vendedor => (
           <div key={vendedor.id} className="card">
