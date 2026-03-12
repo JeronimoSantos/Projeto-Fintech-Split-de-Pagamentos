@@ -22,7 +22,6 @@ export const createVendedor = (req, res) => {
     }
 
     const novoVendedor = Vendedor.criar(req.body);
-    
     res.status(201).json(novoVendedor);
 };
 

@@ -10,22 +10,22 @@ export default class VendedorModel {
   static _readDB() {
     const data = fs.readFileSync(dbPath, 'utf-8');
     return JSON.parse(data);
-  }
+  };
 
   static _writeDB(data) {
     fs.writeFileSync(dbPath, JSON.stringify(data, null, 2));
-  }
+  };
 
   // READ - Listar todos
   static listarTodos() {
     return this._readDB().vendedores;
-  }
+  };
 
   // READ - Buscar por ID
   static buscarPorId(id) {
     const db = this._readDB();
     return db.vendedores.find(v => v.id === Number(id));
-  }
+  };
 
   // UPDATE - Atualizar dados do vendedor
   static atualizar(id, novosDados) {
@@ -39,7 +39,7 @@ export default class VendedorModel {
       return db.vendedores[index];
     }
     return null;
-  }
+  };
 
   // POST - Adicionar vendedor
   static criar(dados) {
@@ -58,7 +58,7 @@ export default class VendedorModel {
     this._writeDB(db);
     
     return novoVendedor;
-}
+  };
 
   // DELETE - Remover vendedor
   static deletar(id) {
@@ -71,7 +71,7 @@ export default class VendedorModel {
       return true;
     }
     return false;
-  }
+  };
 
   static atualizarSaldoESalvarTransacao(vendedorId, novoSaldo, transacao) {
     const db = this._readDB();
@@ -84,7 +84,6 @@ export default class VendedorModel {
 
     // 2. Registra a transação no histórico global
     db.transacoes.push(transacao);
-    
     this._writeDB(db);
-  }
-}
+  };
+};
