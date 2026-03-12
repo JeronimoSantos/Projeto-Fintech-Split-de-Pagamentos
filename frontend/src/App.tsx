@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Dashboard } from './pages/Dashboard';
+import { SimuladorVenda } from './pages/SimuladorVendas';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/vendas" element={<SimuladorVenda />} />
           {/* Adicione outras rotas conforme criar as páginas */}
         </Routes>
       </main>
