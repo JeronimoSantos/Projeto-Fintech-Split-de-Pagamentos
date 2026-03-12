@@ -11,6 +11,7 @@ export const Home = () => {
         <nav className="flex gap-4">
           <Link to="/dashboard" className="text-white hover:text-amber-300 transition-colors">Ver Vendedores</Link>
           <Link to="/vendas" className="text-white hover:text-amber-300 transition-colors">Simular Venda</Link>
+          <Link to="/transacoes" className="text-white hover:text-amber-300 transition-colors">Extratos</Link>
         </nav>
       </header>
 
