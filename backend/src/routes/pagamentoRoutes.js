@@ -8,6 +8,8 @@ router.get('/vendedores', Controller.listarVendedores);
 
 router.get('/vendedores/:id', Controller.buscarVendedor);
 
+router.get('/transacoes', Controller.listarTransacoes);
+
 router.put('/vendedores/:id', Controller.atualizarVendedor);
 
 router.delete('/vendedores/:id', Controller.excluirVendedor);
