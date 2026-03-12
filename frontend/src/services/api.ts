@@ -11,6 +11,12 @@ export const vendedorService = {
     const response = await api.get<Vendedor[]>('/vendedores');
     return response.data;
   },
+
+  // GET: Listar todos os extratos
+  listarTransacoes: async () => {
+    const response = await api.get('/transacoes');
+    return response.data;
+  },
   
   // POST para criar
   criar: async (dados: { nome: string; comissao_percentual: number }) => {
