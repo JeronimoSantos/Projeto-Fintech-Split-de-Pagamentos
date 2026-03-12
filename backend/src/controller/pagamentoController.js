@@ -1,4 +1,10 @@
 import Vendedor from '../model/Vendedor.js';
+import fs from 'fs';
+import path from 'path';
+
+// Lógica para ler o arquivo JSON (ou importe diretamente se o Node permitir)
+const dbPath = path.resolve('src/database/db.json');
+const db = JSON.parse(fs.readFileSync(dbPath, 'utf-8'));
 
 // GET - Listar
 export const listarVendedores = (req, res) => {
@@ -11,6 +17,16 @@ export const buscarVendedor = (req, res) => {
     const vendedor = Vendedor.buscarPorId(req.params.id);
     vendedor ? res.json(vendedor) : res.status(404).json({ erro: "Não encontrado" });
 };
+
+// GET - Listar transações
+export const listarTransacoes = async (req, res) => {
+    try {
+      const transacoes = db.transacoes; 
+      res.status(200).json(transacoes);
+    } catch (error) {
+      res.status(500).json({ mensagem: "Erro ao buscar transações" });
+    }
+}
 
 // POST - Criar vendedor
 export const createVendedor = (req, res) => {
