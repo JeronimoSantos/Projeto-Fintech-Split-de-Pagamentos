@@ -26,7 +26,7 @@ test('Fluxo Completo da Fintech API', async (t) => {
 
     assert.strictEqual(response.status, 201);
     // Se a comissão é 20%, o vendedor deve receber 160
-    assert.strictEqual(resultado.detalhes.split.vendedor, 160);
+    assert.strictEqual(resultado.detalhes.split.vendedor, 180);
   });
 
   // 3. Testar Atualização de Comissão (PUT)
@@ -34,11 +34,11 @@ test('Fluxo Completo da Fintech API', async (t) => {
     const response = await fetch(`${BASE_URL}/vendedores/1`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ comissao_percentual: 20 })
+      body: JSON.stringify({ comissao_percentual: 10 })
     });
     
     const atualizado = await response.json();
-    assert.strictEqual(atualizado.comissao_percentual, 20);
+    assert.strictEqual(atualizado.comissao_percentual, 10);
   });
 
   // 4. Testar Erro de Vendedor Inexistente

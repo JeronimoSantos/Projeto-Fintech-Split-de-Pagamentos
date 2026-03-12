@@ -3,26 +3,34 @@
     {
       "id": 1,
       "nome": "Gedenilsom",
-      "saldo": 20,
-      "comissao_percentual": 20,
+      "saldo": 2520,
+      "comissao_percentual": 10,
       "longitude": "1.1",
       "latitude": "3.4"
     },
     {
       "id": 2,
       "nome": "Beltanisi",
-      "saldo": 10,
-      "comissao_percentual": 20,
+      "saldo": 330,
+      "comissao_percentual": 10,
       "longitude": "2.5",
       "latitude": "2.4"
     },
     {
       "id": 1773078527392,
       "nome": "Anderli",
-      "saldo": 0,
-      "comissao_percentual": 20,
+      "saldo": 2070,
+      "comissao_percentual": 10,
       "longitude": "2.5",
       "latitude": "1.4"
+    },
+    {
+      "id": 1773261258929,
+      "nome": "Pele da silva costa",
+      "saldo": 0,
+      "comissao_percentual": 10,
+      "longitude": "0",
+      "latitude": "0"
     }
   ],
   "transacoes": [
@@ -55,6 +63,146 @@
         "vendedor": 160
       },
       "data": "2026-03-08T21:42:35.299Z"
+    },
+    {
+      "id": 1773248679538,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 40,
+        "vendedor": 160
+      },
+      "data": "2026-03-11T17:04:39.538Z"
+    },
+    {
+      "id": 1773248719586,
+      "vendedorId": 2,
+      "valorBruto": 400,
+      "split": {
+        "plataforma": 80,
+        "vendedor": 320
+      },
+      "data": "2026-03-11T17:05:19.586Z"
+    },
+    {
+      "id": 1773248842766,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-11T17:07:22.766Z"
+    },
+    {
+      "id": 1773248892723,
+      "vendedorId": 1773078527392,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-11T17:08:12.723Z"
+    },
+    {
+      "id": 1773249144240,
+      "vendedorId": 1773078527392,
+      "valorBruto": 100,
+      "split": {
+        "plataforma": 10,
+        "vendedor": 90
+      },
+      "data": "2026-03-11T17:12:24.240Z"
+    },
+    {
+      "id": 1773249151619,
+      "vendedorId": 1773078527392,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-11T17:12:31.619Z"
+    },
+    {
+      "id": 1773249157711,
+      "vendedorId": 1773078527392,
+      "valorBruto": 300,
+      "split": {
+        "plataforma": 30,
+        "vendedor": 270
+      },
+      "data": "2026-03-11T17:12:37.711Z"
+    },
+    {
+      "id": 1773249261291,
+      "vendedorId": 1773078527392,
+      "valorBruto": 400,
+      "split": {
+        "plataforma": 40,
+        "vendedor": 360
+      },
+      "data": "2026-03-11T17:14:21.291Z"
+    },
+    {
+      "id": 1773249278332,
+      "vendedorId": 1773078527392,
+      "valorBruto": 500,
+      "split": {
+        "plataforma": 50,
+        "vendedor": 450
+      },
+      "data": "2026-03-11T17:14:38.332Z"
+    },
+    {
+      "id": 1773249296164,
+      "vendedorId": 1773078527392,
+      "valorBruto": 600,
+      "split": {
+        "plataforma": 60,
+        "vendedor": 540
+      },
+      "data": "2026-03-11T17:14:56.164Z"
+    },
+    {
+      "id": 1773258903075,
+      "vendedorId": 1,
+      "valorBruto": 1000,
+      "split": {
+        "plataforma": 100,
+        "vendedor": 900
+      },
+      "data": "2026-03-11T19:55:03.075Z"
+    },
+    {
+      "id": 1773258913673,
+      "vendedorId": 1,
+      "valorBruto": 1000,
+      "split": {
+        "plataforma": 100,
+        "vendedor": 900
+      },
+      "data": "2026-03-11T19:55:13.673Z"
+    },
+    {
+      "id": 1773259023946,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-11T19:57:03.946Z"
+    },
+    {
+      "id": 1773259036427,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-11T19:57:16.427Z"
     }
   ]
 }
