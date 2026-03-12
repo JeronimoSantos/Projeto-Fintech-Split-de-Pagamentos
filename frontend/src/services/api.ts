@@ -12,6 +12,20 @@ export const vendedorService = {
     return response.data;
   },
   
+  // POST para criar
+  criar: async (dados: { nome: string; comissao_percentual: number }) => {
+    return api.post('/vendedores', dados);
+  },
+
+  atualizar: async (id: number, dados: { nome: string; comissao_percentual: number }) => {
+  return api.put(`/vendedores/${id}`, dados); //
+  },
+
+  // DELETE para remover
+  excluir: async (id: number) => {
+    return api.delete(`/vendedores/${id}`);
+  },
+
   // Exemplo de POST para o futuro
   processarSplit: async (vendedorId: number, valorTotal: number) => {
     return api.post('/split', { vendedorId, valorTotal });
