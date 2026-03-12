@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nome": "Gedenilsom",
-      "saldo": 2520,
+      "saldo": 2700,
       "comissao_percentual": 10,
       "longitude": "1.1",
       "latitude": "3.4"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "nome": "Beltanisi",
-      "saldo": 330,
+      "saldo": 1050,
       "comissao_percentual": 10,
       "longitude": "2.5",
       "latitude": "2.4"
@@ -23,14 +23,6 @@
       "comissao_percentual": 10,
       "longitude": "2.5",
       "latitude": "1.4"
-    },
-    {
-      "id": 1773261258929,
-      "nome": "Pele da silva costa",
-      "saldo": 0,
-      "comissao_percentual": 10,
-      "longitude": "0",
-      "latitude": "0"
     }
   ],
   "transacoes": [
@@ -203,6 +195,56 @@
         "vendedor": 180
       },
       "data": "2026-03-11T19:57:16.427Z"
+    },
+    {
+      "id": 1773320519591,
+      "vendedorId": 1,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-12T13:01:59.591Z"
+    },
+    {
+      "id": 1773320541584,
+      "vendedorId": 2,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-12T13:02:21.584Z"
+    },
+    {
+      "id": 1773328768031,
+      "vendedorId": 2,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-12T15:19:28.031Z"
+    },
+    {
+      "id": 1773328768051,
+      "vendedorId": 2,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-12T15:19:28.051Z"
+    },
+    {
+      "id": 1773328791324,
+      "vendedorId": 2,
+      "valorBruto": 200,
+      "split": {
+        "plataforma": 20,
+        "vendedor": 180
+      },
+      "data": "2026-03-12T15:19:51.324Z"
     }
   ]
 }
