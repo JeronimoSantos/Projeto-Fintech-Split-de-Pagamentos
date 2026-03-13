@@ -14,7 +14,7 @@ Criação de uma Aplicação Full-Stack moderna e escalavel para resolver o desa
 O cálculo da divisão é o cerne da aplicação. Quando uma venda no valor de $V$ ocorre para um vendedor com uma taxa de comissão de $C$:
 Essa lógica garante transparência fiscal e operacional, eliminando erros manuais na distribuição de lucros.
 
-![Imagem do Grafico do calculo Split](./public/imagem%20crafico%20do%20calculo%20do%20split.png)
+![Imagem do Grafico do calculo Split](./frontend/src/assets/imagem%20crafico%20do%20calculo%20do%20split.png)
 
 ## 🧰 Tecnologias Utilizadas
 
@@ -47,6 +47,19 @@ No frontend a parte visual e a marca visual da aplicação foi construida com as
 - **```UI/UX Premium:```** Interface inspirada na Inter.co, efeitos de glassmorphism e alta responsividade.
 
 ## 📸 Imagens do Projeto
+
+### Página Home
+![](./frontend/src/assets/img-tijolo-home.png)
+![](./frontend/src/assets/img-tijolo-home-funcionalidades.png)
+
+### Página Vendedores
+![](./frontend/src/assets/img-tijolo-vendedor.png)
+
+### Página Split
+![](./frontend/src/assets/img-tijolo-split.png)
+
+### Página Extrato Global
+![](./frontend/src/assets/img-tijolo-extrato.png)
 
 ## 🔗 Backend
 No backend a API REST foi desenvolvida em Node.js que simula a operação de um mecanismo de pagamento com valores divididos entre a plataforma e os vendedores. O projeto aplica padrões arquitetônicos profissionais para garantir escalabilidade e fácil manutenção.
@@ -281,7 +294,7 @@ cd projeto-fintech-split-de-pagamentos
 ```
 cd backend
 npm install
-npm run server
+npm run dev
 ```
 
 4. Instale as dependecias do Frontend:
