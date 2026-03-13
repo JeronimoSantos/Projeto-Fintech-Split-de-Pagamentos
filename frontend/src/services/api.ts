@@ -1,10 +1,11 @@
 import axios from 'axios';
-import type { Vendedor } from '../types'; // Importe a interface que definimos antes
+import type { Vendedor } from '../types';
 
 const api = axios.create({
   baseURL: 'http://localhost:3000/pagamentos',
 });
 
+// Lógica de Negócio
 export const vendedorService = {
   // GET: Listar todos
   listar: async (): Promise<Vendedor[]> => {

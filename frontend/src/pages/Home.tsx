@@ -6,7 +6,7 @@ export const Home = () => {
       
       {/* Header ocupando 100% da largura */}
       <header className=" p-6 m-2 flex justify-between items-center shadow-lg rounded-b-lg">
-        <h1 className="text-amber-300 text-3xl font-bold italic">Fintech Split</h1>
+        <h1 className="text-amber-300 text-3xl font-bold italic">TijoloPay</h1>
 
         <nav className="flex gap-4">
           <Link to="/dashboard" className="text-white hover:text-amber-300 transition-colors">Ver Vendedores</Link>
@@ -18,7 +18,7 @@ export const Home = () => {
       {/* Conteúdo centralizado mas com fundo que expande */}
       <main className="w-full p-10 min-h-[calc(100vh-88px)]">
         <section className="max-w-5xl mx-auto">
-          <h1 className="text-5xl font-black mb-4">Fintech Split</h1>
+          <h1 className="text-5xl font-black mb-4">Fintech TijoloPay</h1>
           <p className="text-xl mb-6 font-medium text-amber-900">
             Bem-vindo ao motor de gerenciamento financeiro de alta performance.
           </p>

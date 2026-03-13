@@ -1,16 +1,6 @@
 import { useEffect, useState } from 'react';
 import { vendedorService } from '../services/api';
-
-interface Transacao {
-  id: number;
-  vendedorId: number;
-  valorBruto: number;
-  split: {
-    plataforma: number;
-    vendedor: number;
-  };
-  data: string;
-}
+import type { Transacao } from '../types';
 
 export const Extrato = () => {
   const [transacoes, setTransacoes] = useState<Transacao[]>([]);
