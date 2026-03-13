@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  /* Aqui você define a variável que o Tailwind transformará em utilitário */
+  --background-image-tijolo-fundo: url('./assets/bg-home-02.png');
+  --background-image-tijolo-primeiro: url('./assets/bg-home-01.png');
+  --background-image-tijolo-final: url('./assets/bg-home-05.jpg');
+}
+
 :root {
     margin: 0;
     padding: 0;
     list-style: none;
 };
+
