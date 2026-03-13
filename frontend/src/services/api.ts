@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { Vendedor } from '../types';
+import type { Transacao, Vendedor } from '../types';
 
 const api = axios.create({
   baseURL: 'http://localhost:3000/pagamentos',
@@ -14,7 +14,7 @@ export const vendedorService = {
   },
 
   // GET: Listar todos os extratos
-  listarTransacoes: async () => {
+  listarTransacoes: async (): Promise<Transacao[]> => {
     const response = await api.get('/transacoes');
     return response.data;
   },

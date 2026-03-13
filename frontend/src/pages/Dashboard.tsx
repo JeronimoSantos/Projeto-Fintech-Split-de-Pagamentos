@@ -108,7 +108,7 @@ export function Dashboard() {
 
                   <div className="mt-4">
                     <p className="text-sm text-slate-400">Saldo Atual</p>
-                    <p className="text-2xl font-bold text-orange-400">R$ {v.saldo.toFixed(2)}</p>
+                    <p className="text-2xl font-bold text-orange-400">R$ {v.saldo?.toFixed(2) || "0.00"}</p>
                   </div>
                 </>
               )}

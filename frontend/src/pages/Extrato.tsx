@@ -8,7 +8,7 @@ export const Extrato = () => {
   const [transacoes, setTransacoes] = useState<Transacao[]>([]);
 
   useEffect(() => {
-    vendedorService.listarTransacoes().then(res => setTransacoes(res.reverse())); // Mais recentes primeiro
+    vendedorService.listarTransacoes().then(res => setTransacoes(res.reverse())) // Mais recentes primeiro
   }, []);
 
   return (
@@ -45,14 +45,14 @@ export const Extrato = () => {
 
               <tbody className="divide-y divide-white/5">
                 {transacoes.map(t => (
-                  <tr key={t.id} className="hover:bg-white/[0.02] transition-colors group">
+                  <tr key={t.id || t.vendedorId} className="hover:bg-white/2 transition-colors group">
                     <td className="p-4 text-slate-400 text-sm">
                       {new Date(t.data).toLocaleDateString('pt-BR')}
                     </td>
                     <td className="p-4 font-bold text-orange-100">ID: {t.vendedorId}</td>
-                    <td className="p-4 font-mono text-slate-300">R$ {t.valorBruto.toFixed(2)}</td>
-                    <td className="p-4 text-orange-500 font-bold">- R$ {t.split.plataforma.toFixed(2)}</td>
-                    <td className="p-4 text-green-400 font-black">R$ {t.split.vendedor.toFixed(2)}</td>
+                    <td className="p-4 font-mono text-slate-300">R$ {t.valorBruto.toFixed(2) || "0.00"}</td>
+                    <td className="p-4 text-orange-500 font-bold">- R$ {t.split?.plataforma.toFixed(2) || "0.00"}</td>
+                    <td className="p-4 text-green-400 font-black">R$ {t.split?.vendedor.toFixed(2) || "0.00"}</td>
                   </tr>
                 ))}
               </tbody>
