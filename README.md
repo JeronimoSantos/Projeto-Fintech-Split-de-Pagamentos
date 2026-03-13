@@ -1,24 +1,24 @@
 # 🚀🧱🟠 Fintech TijoloPay: Projeto Full-Stack
-Esta é uma API REST desenvolvida em Node.js que simula a operação de um mecanismo de pagamento com valores divididos entre a plataforma e os vendedores. O projeto aplica padrões arquitetônicos profissionais para garantir escalabilidade e fácil manutenção.
+Desenvolvimento do TijoloPay, uma aplicação Full-stack que resolve um desafio real de marketplaces: o Split de Pagamentos. O nome é uma homenagem à solidez do setor de construção brasileiro (uma referência à minha admiração por cases como o da MadeiraMadeira) e o design foi inspirado na fluidez da Inter.
 
 ## 🎯 Objetivo Principal
-Build a Rest API using Node.js, Express with assistance in organizing using the MVC architecture (Model View and Controller).
+Construção do zero de uma aplicação Full-Stack utilizando como base a API desenvolvida anteriormente aplicando boas praticas, regras de négocio e seguir o conceito de componentização.
 
-## 🚨 Problematization
-Marketplace platforms need to split payments automatically. This API solves this by calculating the platform's commission and the seller's net balance at the time of the transaction, ensuring the integrity of financial data.
+## 🚨 Problematização
+As plataformas de marketplace precisam dividir os pagamentos automaticamente. Esta Aplicação resolve esse problema calculando a comissão da plataforma e o saldo líquido do vendedor no momento da transação, garantindo a integridade dos dados financeiros.
 
-## 💡 Solution
-Create an API that simulates what Stripe or Pagar.me do: split a payment between a platform and a seller.
+## 💡 Solução
+Criação de uma Aplicação Full-Stack moderna e escalavel para resolver o desafio.
 
-## 🧠 Business Rule: The Smart Split
-The split calculation is the heart of the application. When a $V$ value sale occurs to a seller with a $C$ commission fee:
-This logic ensures fiscal and operational transparency, eliminating manual errors in profit distribution.
+## 🧠 Regra de negócio: A divisão inteligente
+O cálculo da divisão é o cerne da aplicação. Quando uma venda no valor de $V$ ocorre para um vendedor com uma taxa de comissão de $C$:
+Essa lógica garante transparência fiscal e operacional, eliminando erros manuais na distribuição de lucros.
 
 ![Imagem do Grafico do calculo Split](./public/imagem%20crafico%20do%20calculo%20do%20split.png)
 
-## 🧰 Technologies Used
+## 🧰 Tecnologias Utilizadas
 
-| Layer | Technologies | Version | 
+| Camadas | Tecnologias | Versão | 
 |-------|--------------|---------|
 | Frontend | ![React][react-url] | v^19.2.0 |
 | Frontend | ![Vite][vite-url] | v^7.3.1 |
@@ -31,12 +31,13 @@ This logic ensures fiscal and operational transparency, eliminating manual error
 | Tools | ![Insomnia][insomnia-url] | v12.4.0 |
 
 ## 🎨 Frontend 
+No frontend a parte visual e a marca visual da aplicação foi construida com as tecnologias mais modernas e demandadas pelo mercado contendo quatro paginas com responsabilidades deferentes, interligadas e totalmente responsivas para qualquar tela de dispositivo. A organização foi baseada na arquitetura MVC e componentização para melhor reotilização em outras partes do projeto.
 
-## 📚 Process elaboration
+## 📚 Processo de Desenvolvimento
 - **Primeiro:** Começando pela arquitetura fazendo a instalação e configuração do ecosistema Vite que oferece um ambiente de desenvolvimento extremamente rápido, o TypeScript garante que os "tijolos" (dados) se encaixem sem erros de tipo, e o Tailwind v4 permite criar a identidade visual de forma atômica.
-- **Segundo** Conexão com API usando o Axios e criação do objeto "vendedorService" com métodos async.
-- **Terceiro** Hook e Tipagem onde criei a pasta hooks com a função "useVendedores" para manipular o Estado(State) e a Lógica de Sincronização. Separei as tipagens em um arquivo à parte para evitar referências circulares.
-- **Quarto** Criação das Paginas e Roteamento organizando em "Home", "Dashboard", "Simulador" e "Extrato". O "Dashbord" foi o centro do Crud. Para que essas páginas funcionem adicionei o React Router DOM, que é o "corredor" que conecta cada um desses cômodos da aplicação.
+- **Segundo:** Conexão com API usando o Axios e criação do objeto "vendedorService" com métodos async.
+- **Terceiro:** Hook e Tipagem onde criei a pasta hooks com a função "useVendedores" para manipular o Estado(State) e a Lógica de Sincronização. Separei as tipagens em um arquivo à parte para evitar referências circulares.
+- **Quarto:** Criação das Paginas e Roteamento organizando em "Home", "Dashboard", "Simulador" e "Extrato". O "Dashbord" foi o centro do Crud. Para que essas páginas funcionem adicionei o React Router DOM, que é o "corredor" que conecta cada um desses cômodos da aplicação.
 
 ## 🌟 Funcionalidades Principais
 - **```CRUD Completo de Parceiros:```** Adição, edição e exclusão de vendedores com persistência de dados.
@@ -48,18 +49,18 @@ This logic ensures fiscal and operational transparency, eliminating manual error
 ## 📸 Imagens do Projeto
 
 ## 🔗 Backend
+No backend a API REST foi desenvolvida em Node.js que simula a operação de um mecanismo de pagamento com valores divididos entre a plataforma e os vendedores. O projeto aplica padrões arquitetônicos profissionais para garantir escalabilidade e fácil manutenção.
 
-## 📚 Process elaboration
-All the key steps I needed in developing and completing the problem.
+## 📚 Processo de Desenvolvimento
+Todas as etapas essenciais que eu precisava para desenvolver e concluir a solução do problema.
 
-- First, I started organizing the project folders and files using the MVC architecture.
-- Secondly, I started by developing the mock database that would be used by the API.
-- Third, I start building the business rules for the application in the controller.
-- Fourth, I focused on developing the application model by adjusting the database integration.
-- Fifth, I started by defining the api routes following the HTTP methods (Get, Post, Put and Delete).
-- Finally, add a test file to the api routes
+- **Primeiro:**, comecei organizando as pastas e arquivos do projeto usando a arquitetura MVC.
+- **Segundo:**, comecei desenvolvendo o banco de dados de teste que seria usado pela API.
+- **Terceiro:**, comecei a construir as regras de negócio para o aplicativo no controlador.
+- **Quarto:**, concentrei-me no desenvolvimento do modelo do aplicativo, ajustando a integração com o banco de dados.
+- **Quinto:**, comecei definindo as rotas da API seguindo os métodos HTTP (GET, POST, PUT e DELETE) depois adicionei um arquivo de teste às rotas da API.
 
-## 📬 API Endpoints
+## 📬 Endpoints da API
 
 ### 01) Lista que busca todos os Vendedores
 - **Endpoint:** **```http://localhost:3000/pagamentos/vendedores```**
@@ -257,40 +258,40 @@ All the key steps I needed in developing and completing the problem.
 - **Método HTTP:** **```DELETE```**
 - **Descrição** Exclui um vendedor específico no Banco de Dados
 
-## 📝 Prerequisites
-Before you begin, make sure you have the following installed on your computer:
+## 📝 Pre-requisitos
+Antes de começar, certifique-se de ter os seguintes programas instalados em seu computador:
 
-1. [**Git**](https://git-scm.com/downloads) – to clone the project repository.
-2. [**Node.js**](https://nodejs.org/) - to run locally.
-3. [**VS Code**](https://code.visualstudio.com/) *(Optional, but recommended.)*
+1. [**Git**](https://git-scm.com/downloads) – para clonar o repositório do projeto.
+2. [**Node.js**](https://nodejs.org/) - para executar localmente.
+3. [**VS Code**](https://code.visualstudio.com/) *(Opcional, mas recomendado.)*
 
-## ✅ Step by step for Installation
+## ✅ Passo a Passo para Instalação
 
-1. Clone the project repository to your machine:
+1. Clone o repositório do projeto para sua máquina:
 ```
 git clone https://github.com/JeronimoSantos/Projeto-Fintech-Split-de-Pagamentos.git
 ```
 
-2. Go to the project folder:
+2. Acesse a pasta do projeto:
 ```
 cd projeto-fintech-split-de-pagamentos
 ```
 
-3. Up the Backend (API Brick):
+3. Instale as dependecias do Backend:
 ```
 cd backend
 npm install
 npm run server
 ```
 
-4. Climb the Frontend (Dashboard Brick):
+4. Instale as dependecias do Frontend:
 ```
 cd frontend
 npm install
 npm run dev
 ```
 
-5. To ensure that the financial rules are correct, run the native test suite:
+5. Para garantir que as regras financeiras estejam corretas, execute o conjunto de testes nativos:
 ```
 cd backend
 node --test src/test/test.js
