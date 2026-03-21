@@ -7,6 +7,19 @@ Construção do zero de uma aplicação Full-Stack utilizando como base a API de
 ## 🚨 Problematização
 As plataformas de marketplace precisam dividir os pagamentos automaticamente. Esta Aplicação resolve esse problema calculando a comissão da plataforma e o saldo líquido do vendedor no momento da transação, garantindo a integridade dos dados financeiros.
 
+Imagine uma empresa que vende cursos online: o dinheiro entra, mas uma parte pertence ao professor, outra à plataforma e outra ao afiliado. Fazer isso manualmente é um caos. A TijoloPay resolve exatamente esse cenário.
+
+## ❗ Problemas que este projeto resolve
+Aqui estão os problemas reais que ela soluciona:
+
+- ❌ **``Eliminação do Caos da Planilha:``** Sem uma fintech como a TijoloPay, o gestor financeiro precisaria esperar o fim do mês, somar todas as vendas e fazer transferências manuais para cada parceiro levando a possíveis erros de digitação, esquecimento de parceiros e horas perdidas em planilhas de Excel. Nossa solução O Split Automatizado. No momento em que a venda ocorre, o sistema já sabe que "X" vai para a plataforma e "Y" vai para o vendedor. É a divisão inteligente do dinheiro em tempo real.
+
+- ❌ **``Bitributação Indevida:``** Este é um problema contábil e jurídico gravíssimo que a TijoloPay ajuda a evitar. Se R$ 100,00 entram na conta da sua empresa, mas R$ 70,00 são do seu parceiro, o governo pode entender que o seu faturamento foi de R$ 100,00 e te cobrar imposto sobre o valor cheio. Nossa solução Ao usar uma infraestrutura de pagamentos que separa os valores na fonte, você consegue provar que o seu faturamento real foi apenas a sua comissão (os R$ 30,00), reduzindo drasticamente a carga tributária legalmente.
+
+- ❌ **``Falta de Transparência e Confiança:``** Em qualquer parceria comercial, o ponto mais sensível é o pagamento. O vendedor parceiro fica inseguro sem saber exatamente quanto vendeu e quanto tem para receber, gerando suporte excessivo e atritos. Nossa solução O Dashboard de Extratos. Ao oferecer uma interface clara, o parceiro tem autonomia para ver suas transações, o que gera confiança e profissionalismo na relação.
+
+- ❌ **``Gestão de Fluxo de Caixa para Ecossistemas:``** Saber quanto a empresa realmente tem de lucro líquido após todos os repasses é difícil em modelos de negócio complexos. Nossa solução A TijoloPay centraliza a visão do saldo bruto vs. saldo disponível, permitindo que o dono do negócio tome decisões baseadas em dados reais, não em estimativas.
+
 ## 💡 Solução
 Criação de uma Aplicação Full-Stack moderna e escalavel para resolver o desafio.
 
